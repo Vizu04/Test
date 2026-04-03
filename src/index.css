@@ -1,0 +1,43 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #f5f0e8;
+  --parchment: #ede7d9;
+  --ink: #1a1814;
+  --ink-soft: #3d3830;
+  --stone: #8c8680;
+  --stone-light: #c4bfb8;
+  --gold: #9a7c4a;
+  --gold-muted: rgba(154, 124, 74, 0.12);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', system-ui, sans-serif;
+  --border: #ddd8cf;
+  --shadow: 0 1px 3px rgba(26, 24, 20, 0.06), 0 4px 16px rgba(26, 24, 20, 0.04);
+}
+
+html { background: var(--cream); }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  color: var(--ink);
+}
+
+p { margin: 0; }
+a { text-decoration: none; color: inherit; }
